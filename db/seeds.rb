@@ -26,14 +26,30 @@ kalada= User.create(name:"Kalada",email:"coldjourney91@gmail.com",phone:"804-987
 
 #department
 
+
 worship = Department.create(name:"Worship Team", roles:{lead_vocal:"active", harmony_1:"active", harmony_2:"active"})
 band = Department.create(name:"Dand", roles:{drums:"active", keyboard:"active", guitar:"active"})
 audio_visual = Department.create(name:"Audio/Visual", roles:{soundboard:"active", lyrics:"active", cameras:"active"})
 usher = Department.create(name:"Usher Team", roles:{greeter:"active", offering:"active", communion:"active"})
 
-#events
+# worship = Department.create(name:"Worship Team", {"roles":{"lead_vocal":"active","harmony_1":"active","harmony_2":"active"}})
+ #new_one = Department.create(name:"Worship Team",roles:[{color: 'blue',status: 'pending'}])
+  #band = Department.create(name:"Dand", roles:{drums:"active"},{keyboard:"active"},{guitar:"active"})
+ #new_one = Department.create(name:"Worship Team",roles:[{color: 'blue'},{status: 'pending'}])
+ #new_one = Department.create(name:"Worship Team",roles:{color: 'blue',status: 'pending'})
 
-sunday_service = Event.create(name:"Sunday Morning Worship",date:"01/31/2021",comment:"Please put anything here for the event", user_id:alex.id, department_id:worship.id, user:alex.name, department:worship.name)
-three_d = Event.create(name:"3D event",date:"02/05/2021",comment:"Please put anything here for the event", user_id:chris.id, department_id:worship.id, user:chris.name, department:worship.name) 
-first_friday = Event.create(name:"First Friday",date:"02/05/2021",comment:"Please put anything here for the event", user_id:chris.id, department_id:worship.id, user:chris.name, department:worship.name) 
+
+#worship = Department.create({name:"Worship Team",roles:{lead_vocal:"active",harmony_1:"active", harmony_2:"active"})
+
+
+ #worship = Department.create(name:"Worship Team", roles:{"lead_vocal":"active", "harmony_1":"active", "harmony_2":"active"})
+ #band = Department.create(name:"Dand", roles:{drums:"active", keyboard:"active", guitar:"active"})
+# audio_visual = Department.create(name:"Audio/Visual", roles:{soundboard:"active", lyrics:"active", cameras:"active"})
+# usher = Department.create(name:"Usher Team", roles:{greeter:"active", offering:"active", communion:"active"})
+
+# #events
+
+ sunday_service = Event.create(name:"Sunday Morning Worship",date:"01/31/2021",comment:"Please put anything here for the event", user_id:alex.id, department_id:worship.id)
+three_d = Event.create(name:"3D event",date:"02/05/2021",comment:"Please put anything here for the event", user_id:chris.id, department_id:worship.id) 
+first_friday = Event.create(name:"First Friday",date:"02/05/2021",comment:"Please put anything here for the event", user_id:chris.id, department_id:worship.id) 
 
