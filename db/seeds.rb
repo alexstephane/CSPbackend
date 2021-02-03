@@ -19,10 +19,10 @@ Department.destroy_all
 Event.destroy_all
 #users
 
-alex= User.create(name:"Alex",email:"coldjourney91@gmail.com",phone:"804-987-0987",password:"alex",image:"", comment:"comment")
-chris= User.create(name:"Chris",email:"coldjourney91@gmail.com",phone:"804-987-0987",password:"alex",image:"", comment:"comment")
-boris= User.create(name:"Boris",email:"coldjourney91@gmail.com",phone:"804-987-0987",password:"alex",image:"", comment:"comment")
-kalada= User.create(name:"Kalada",email:"coldjourney91@gmail.com",phone:"804-987-0987",password:"alex",image:"", comment:"comment")
+alex= User.create(name:"Alex",email:"coldjourney91@gmail.com",phone:"804-987-0987",password:"alex",image:"https://ca.slack-edge.com/T02MD9XTF-U015WR36Z7D-62a5722ccad9-512", comment:"comment")
+chris= User.create(name:"Chris",email:"coldjourney91@gmail.com",phone:"804-987-0987",password:"alex",image:"https://ca.slack-edge.com/T02MD9XTF-U015WR36Z7D-62a5722ccad9-512", comment:"comment")
+boris= User.create(name:"Boris",email:"coldjourney91@gmail.com",phone:"804-987-0987",password:"alex",image:"https://ca.slack-edge.com/T02MD9XTF-U015WR36Z7D-62a5722ccad9-512", comment:"comment")
+kalada= User.create(name:"Kalada",email:"coldjourney91@gmail.com",phone:"804-987-0987",password:"alex",image:"https://ca.slack-edge.com/T02MD9XTF-U015WR36Z7D-62a5722ccad9-512", comment:"comment")
 
 #department
 
