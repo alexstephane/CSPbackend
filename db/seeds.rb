@@ -22,6 +22,7 @@ kalada= User.create(name:"Kalada",email:"coldjourney91@gmail.com",phone:"804-987
 worship = Department.create(name:"Worship Team", roles:['lead_vocal','harmony_1','harmony_2'])
 
 band = Department.create(name:"Band", roles:['Drums','Keys','Guitar'])
+band = Department.create(name:"Band", roles:['Drums','Keys','Guitar'])
 
 worship = Department.create(name:"Worship Team", roles:['lead_vocal','harmony_1','harmony_2'])
 # band = Department.create(name:"Band", roles:{drums:"active", keyboard:"active", guitar:"active"})
