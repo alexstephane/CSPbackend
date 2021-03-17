@@ -19,21 +19,21 @@ kalada= User.create(name:"Kalada",email:"coldjourney91@gmail.com",phone:"804-987
 #department
 
 
-worship = Department.create(name:"Worship Team", roles:['lead_vocal','harmony_1','harmony_2'])
+#worship = Department.create(name:"Worship Team", roles:['lead_vocal','harmony_1','harmony_2'])
 
-band = Department.create(name:"Band", roles:['Drums','Keys','Guitar'])
-band = Department.create(name:"Band", roles:['Drums','Keys','Guitar'])
+#band = Department.create(name:"Band", roles:['Drums','Keys','Guitar'])
+#band = Department.create(name:"Band", roles:['Drums','Keys','Guitar'])
 
 worship = Department.create(name:"Worship Team", roles:['lead_vocal','harmony_1','harmony_2'])
 # band = Department.create(name:"Band", roles:{drums:"active", keyboard:"active", guitar:"active"})
-# audio_visual = Department.create(name:"Audio/Visual", roles:{soundboard:"active", lyrics:"active", cameras:"active"})
-# usher = Department.create(name:"Usher Team", roles:{greeter:"active", offering:"active", communion:"active"})
+#audio_visual = Department.create(name:"Audio/Visual", roles:{soundboard:"active", lyrics:"active", cameras:"active"})
+ #usher = Department.create(name:"Usher Team", roles:{greeter:"active", offering:"active", communion:"active"})
 
-# worship = Department.create(name:"Worship Team", {"roles":{"lead_vocal":"active","harmony_1":"active","harmony_2":"active"}})
-#  new_one = Department.create(name:"Worship Team",roles:[{color: 'blue',status: 'pending'}])
-#   band = Department.create(name:"Dand", roles:{drums:"active"},{keyboard:"active"},{guitar:"active"})
+#worship = Department.create(name:"Worship Team", {"roles":{"lead_vocal":"active","harmony_1":"active","harmony_2":"active"}})
+  #new_one = Department.create(name:"Worship Team",roles:[{color: 'blue',status: 'pending'}])
+#band = Department.create(name:"Dand", roles:{drums:"active"},{keyboard:"active"},{guitar:"active"})
 #  new_one = Department.create(name:"Worship Team",roles:[{color: 'blue'},{status: 'pending'}])
-#  new_one = Department.create(name:"Worship Team",roles:{color: 'blue',status: 'pending'})
+# new_one = Department.create(name:"Worship Team",roles:{color: 'blue',status: 'pending'})
 
 
 #worship = Department.create({name:"Worship Team",roles:{lead_vocal:"active",harmony_1:"active", harmony_2:"active"})
@@ -41,7 +41,7 @@ worship = Department.create(name:"Worship Team", roles:['lead_vocal','harmony_1'
 
  #worship = Department.create(name:"Worship Team", roles:{"lead_vocal":"active", "harmony_1":"active", "harmony_2":"active"})
  #band = Department.create(name:"Dand", roles:{drums:"active", keyboard:"active", guitar:"active"})
-# audio_visual = Department.create(name:"Audio/Visual", roles:{soundboard:"active", lyrics:"active", cameras:"active"})
+#audio_visual = Department.create(name:"Audio/Visual", roles:{soundboard:"active", lyrics:"active", cameras:"active"})
 # usher = Department.create(name:"Usher Team", roles:{greeter:"active", offering:"active", communion:"active"})
 
 # #events

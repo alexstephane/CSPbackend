@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2021_01_22_182642) do
 
   create_table "departments", force: :cascade do |t|
     t.string "name"
-    t.string "roles", default: [], array: true
+    t.string "roles"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

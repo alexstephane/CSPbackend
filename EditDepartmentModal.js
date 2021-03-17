@@ -4,16 +4,27 @@ import Snackbar from "@material-ui/core/Snackbar";
 import IconButton from "@material-ui/core/IconButton";
 
 
-export class  CreatUserModal extends Component{
+export class  EditDepartmentModal extends Component{
 
 
 constructor(props) {
     super(props);
 
-this.state = {snackbaropen: false, snackbarmsg:''};
+this.state = {snackbaropen: false, snackbarmsg:'',departments:[]};
 this.handleSubmit = this.handleSubmit.bind(this);
 }
 
+
+componentDidMount(){
+fetch(`http://localhost:3004/departments`)
+  .then(resp => resp.json())
+  .then(data => {
+    this.setState({departments:data})
+    console.log(data)
+
+  })
+  
+}
 SnackbarClose = (event) =>{
   this.setState({snackbaropen:false});
 }
@@ -23,18 +34,18 @@ handleSubmit(event){
 event.preventDefault();
 //alert(event.target.MemberName.value);
 
-fetch(`http://localhost:3004/users`,{
-  method:"POST",
+fetch(`http://localhost:3004/departments`,{
+  method:"PUT",
   headers:{
     'Accept':'application/json',
     'Content-Type': 'application/json'
 
   },
   body:JSON.stringify({
+    id: event.target.id.value,
     name: event.target.name.value,
-    phone: event.target.phone.value,
-    email: event.target.email.value
-
+    role: event.target.role.value,
+    
   })
 })
 .then(resp=> resp.json())
@@ -87,7 +98,7 @@ fetch(`http://localhost:3004/users`,{
               >
                 <Modal.Header closeButton>
                   <Modal.Title id="contained-modal-title-vcenter">
-                    ADD A MEMBER
+                    update Department
                   </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
@@ -106,32 +117,27 @@ fetch(`http://localhost:3004/users`,{
                          
                          />
                          </Form.Group>
-                         <Form.Group controlId="email">
-                         <Form.Label>Email Address</Form.Label>  
-                         <Form.Control 
-                         type="text"
-                         name= "email"
-                         required
-                         placeholder="Email"
-                         
-                         />
+                         <Form.Group controlId="role">
+                         <Form.Label>Role</Form.Label>  
+                         <Form.Control as="select">
+                           {this.state.departments.map(department =>
+                            
+                            <option key={department.id}> {department.roles[0]}</option>
+                            
+                            
+                            
+                            )}
+
+
+                         </Form.Control>
                          </Form.Group>
 
-                         <Form.Group controlId="phone">
-                         <Form.Label>phone Number</Form.Label>  
-                         <Form.Control 
-                         type="text"
-                         name= "phone"
-                         required
-                         placeholder="Phone"
                          
-                         />
-                         </Form.Group>
 
                          
 
                          <Button variant="primary" type="submit">
-                           Add Member
+                           Edit A Departmemt
                          </Button>
                          </Form>
 
